@@ -1,7 +1,5 @@
 # Classifier Finetuning of GPT2
-Finetuning ol GPT2 pretrained model on SPAM message classsification dataset.
-
-To run and train on low-end cpu only machines, gpt2 architecture pretrained with 256 context size and on a small short-story book text data `./data/the-verdict.txt` . Alternatively, can use OpenAI gpt2 pretrained weights mentioned in below section. Model architecture configuration is given `model_info.txt`.
+Finetuning ol GPT2 pretrained model on SPAM message classsification [dataset](https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip). We use OpenAI gpt2 pretrained weights. Model architecture configuration is given `model_info.txt`.
 
 ## Setup
 Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set up can be found [here](https://docs.astral.sh/uv/getting-started/).
