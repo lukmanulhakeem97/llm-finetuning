@@ -1,1 +1,3 @@
-# LLM Finetuning
+# Finetuning of GPT2
+
+
