@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+README.md
+
+gpt2-classifier-tuning/sms_spam_collection.zip
+gpt2-classifier-tuning/p2_classifier_finetuning.ipynb
+gpt2-classifier-tuning/gpt2_classifier_tuned.pth
