@@ -1,4 +1,4 @@
-# Classifier Finetuning of GPT2
+# Classification Finetuning of GPT2
 Finetuning ol GPT2 pretrained model on SPAM message classsification [dataset](https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip). We use OpenAI gpt2 pretrained weights. Model architecture configuration is given `model_info.txt`.
 
 ## Setup
