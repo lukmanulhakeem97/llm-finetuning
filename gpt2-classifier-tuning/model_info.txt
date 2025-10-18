@@ -1,5 +1,5 @@
 OpenAI gpt2 model configuration
-gpt2-small (124M
+gpt2-small (124M)
 
 - context_length    : 1024 (maximum no. of tokens input can have)
 - vocab_size        : 50257 (maximum no. of unique words/characters model trained on)
