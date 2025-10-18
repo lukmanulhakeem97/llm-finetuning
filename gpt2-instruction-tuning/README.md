@@ -24,6 +24,10 @@ Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set u
 **Finetuning:**
 - Run `uv run finetune.py`, will generate `gpt2_classifier_tuned.pth`.
 
+**Evaluation:**
+
+- Average score is 49.54 on 110 test samples.
+
 ## Credits
 - https://github.com/rasbt/LLMs-from-scratch
 - https://amzn.to/4fqvn0D
