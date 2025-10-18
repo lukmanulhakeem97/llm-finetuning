@@ -1,0 +1,8 @@
+OpenAI gpt2 model configuration
+gpt2-medium (355M)
+
+- context_length    : 1024 (maximum no. of tokens input can have)
+- vocab_size        : 50257 (maximum no. of unique words/characters model trained on)
+- emb_dim           : 1024 (hidden/embedding dimension)
+- n_heads           : 16 (number of attention heads)
+- n_layers          : 24 (number of layers/transformer blocks)
