@@ -1,0 +1,9 @@
+OpenAI gpt2 model configuration
+
+- context_length    : 1024 (maximum no. of tokens input can have)
+- vocab_size        : 50257 (maximum no. of unique words/characters model trained on)
+- emb_dim           : 768 (hidden/embedding dimension)
+- n_heads           : 12 (number of attention heads)
+- n_layers          : 12 (number of layers/transformer blocks)
+
+Final output linear layer of size 50257 were modified with size 2 for two classes; spam and not spam.
