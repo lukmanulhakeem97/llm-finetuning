@@ -25,14 +25,14 @@ Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set u
 - Run `uv run finetune.py`, will generate `gpt2_instruct_tuned.pth`.
 
 **Evaluation:**
-- Finetuned model is evaluated with [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) method. It uses another LLM to evaluate the response of our model. We will be using test data partioned from the dataset `data/instruction-data.json` after running `finetune.py`.
+- Finetuned model is evaluated with [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) method. It uses another LLM to evaluate the response of our model. We will be using test data partioned from the dataset `data/instruction-data.json` after running `uv run finetune.py`.
 - We use Ollama and `qwen2.5:7b` llm to run evaluation. Model can be any other regarding computaion ability of our machine.
   
      > Refer [ollama-setup](https://github.com/ollama/ollama) to run ollama and local model on your machine.
      
      > After installing ollama and llm, run ollama either via selecting ollama application or by running `ollama serve` in command prompt.
      
-- Run `evaluation.py` to evaluate the model.
+- Run `uv run evaluation.py` to evaluate the model.
 - Average score after evaluation is 49.54 out of 100 on 110 test samples.
 
 ## Credits
