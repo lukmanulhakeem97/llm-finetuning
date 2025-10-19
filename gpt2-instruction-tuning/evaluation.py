@@ -34,7 +34,7 @@ def query_model(
     }
 
     # Send the POST request
-    with requests.post(url, json=data, stream=True, timeout=30) as r:
+    with requests.post(url, json=data, stream=True, timeout=70) as r:
         r.raise_for_status()
         response_data = ""
         for line in r.iter_lines(decode_unicode=True):
@@ -76,6 +76,15 @@ if __name__ == "__main__":
     file_path = "instruction-data-with-response.json"
     with open(file_path, "r") as file:
         test_data = json.load(file)
+
+    # entry = test_data[0]
+    # print(
+    #         f"Given the input `{format_input(entry)}` "
+    #         f"and correct output `{entry['output']}`, "
+    #         f"score the model response `{entry["model_response"]}`"
+    #         f" on a scale from 0 to 100, where 100 is the best score. "
+    #         f"Respond with the integer number only."
+    #     )
 
     model = "qwen2.5:7b"
     scores = generate_model_scores(test_data, "model_response", model=model)
