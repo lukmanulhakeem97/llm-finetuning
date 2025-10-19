@@ -7,4 +7,7 @@ gpt2-small (124M)
 - n_heads           : 12 (number of attention heads)
 - n_layers          : 12 (number of layers/transformer blocks)
 
-Final output linear layer of size 50257 were modified with size 2 for two classes; spam and not spam.
+- no. of params     : ~124M [NOTE]
+- model size        : 621.94 MB MB (each param of 4 bytes (float32))
+
+NOTE: Final output linear layer of size 50257 were modified with size 2 for two classes; spam and not spam.
