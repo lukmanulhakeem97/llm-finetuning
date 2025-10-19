@@ -19,7 +19,8 @@ Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set u
 ## Run the code
 **Ask Model:**
 - Download pretrained `gpt2_instruct_tuned.pth` from my [huggingfaceHub](https://huggingface.co/lukmanulhakeem/gpt2-instruction-tuned/tree/main) and place it on cloned `llm-finetuning\gpt2-instruction-tuning` path.
-- Run `inference.py`: Shows User-Bot interaction mode. You should ask model to solve the task as an instruction sentence, eg: `Classify the following numbers as prime or composite: 11, 14, 19.`.
+- Run `inference.py`: Shows User-Bot interaction mode. You should ask model to solve the task as an instruction sentence, eg: `"Classify the following numbers as prime or composite: 11, 14, 19."`
+
 **Finetuning:**
 - Run `uv run finetune.py`, will generate `gpt2_instruct_tuned.pth`.
 
