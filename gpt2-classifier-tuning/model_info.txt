@@ -8,5 +8,5 @@ gpt2-small (124M)
 - n_layers          : 12 (number of layers/transformer blocks)
 
 NOTE: Final output linear layer of size 50257 were modified with size 2 for two classes; spam and not spam.
-- no. of params     : ~124M [include extra qkv_bias params which is set "False" for model.pth] (after output layer weight-tying)
+- no. of params     : ~124M [after output layer weight-tying]
 - model size        : 524 MB (each param of 4 bytes (float32))
