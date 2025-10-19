@@ -6,3 +6,6 @@ gpt2-medium (355M)
 - emb_dim           : 1024 (hidden/embedding dimension)
 - n_heads           : 16 (number of attention heads)
 - n_layers          : 24 (number of layers/transformer blocks)
+
+- no. of params     : 124,439,808 (124M) 
+- model size        : 1.6 GB MB (each param of 4 bytes (float32))
