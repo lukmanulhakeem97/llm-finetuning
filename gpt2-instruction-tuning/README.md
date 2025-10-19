@@ -1,5 +1,5 @@
-# Classification Finetuning of GPT2
-Finetuning of GPT2 pretrained model on SPAM message classsification [dataset](https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip). We use OpenAI gpt2-small (124M) pretrained tensorflow weights after converting to pytorch format. Model architecture configuration is given `model_info.txt`.
+# Instruction Finetuning of GPT2
+Finetuning of GPT2 pretrained model on custom instruction [dataset](https://raw.githubusercontent.com/rasbt/LLMs-from-scratch/main/ch07/01_main-chapter-code/instruction-data.json). We use OpenAI gpt2-medium (355M) pretrained tensorflow weights after converting to pytorch format. Model architecture configuration is given `model_info.txt`.
 
 ## Setup
 Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set up can be found [here](https://docs.astral.sh/uv/getting-started/).
@@ -23,6 +23,10 @@ Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set u
 
 **Finetuning:**
 - Run `uv run finetune.py`, will generate `gpt2_classifier_tuned.pth`.
+
+**Evaluation:**
+
+- Average score is 49.54 on 110 test samples.
 
 ## Credits
 - https://github.com/rasbt/LLMs-from-scratch
