@@ -7,5 +7,5 @@ gpt2-medium (355M)
 - n_heads           : 16 (number of attention heads)
 - n_layers          : 24 (number of layers/transformer blocks)
 
-- no. of params     : 124,439,808 (124M) 
-- model size        : 1.6 GB MB (each param of 4 bytes (float32))
+- no. of params     : 355M [output layer weight-tying applied]
+- model size        : ~1.6 GB (each param of 4 bytes (float32))
