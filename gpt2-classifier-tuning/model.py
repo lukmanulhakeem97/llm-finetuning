@@ -184,7 +184,6 @@ def customise_gpt(model):
     for param in model.final_norm.parameters():
         param.requires_grad = True
     
-    model.out_head.requires_grad = True
     return model
     
             

@@ -112,7 +112,7 @@ def main():
     )
     model_size = CHOOSE_MODEL.split(" ")[-1].lstrip("(").rstrip(")")
     settings, params = download_and_load_gpt2(model_size=model_size, 
-                        models_dir="/content/drive/MyDrive/llm-from-scratch/work/gpt2")
+                        models_dir="./gpt2")
 
     model = GPTModel(BASE_CONFIG)
     load_weights_into_gpt(model, params)
