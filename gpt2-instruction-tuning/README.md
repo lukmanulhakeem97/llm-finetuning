@@ -1,7 +1,7 @@
 # Instruction Finetuning of GPT2
 Supervised Finetuning of GPT2 pretrained model on custom instruction [dataset](https://raw.githubusercontent.com/rasbt/LLMs-from-scratch/main/ch07/01_main-chapter-code/instruction-data.json). We use OpenAI gpt2-medium (355M) pretrained tensorflow weights after converting to pytorch format. Model architecture configuration is given `model_info.txt`.
 
-Dataset consists of total 1100 instruction samples, 935 taken for training.
+Dataset consists of total 1100 instruction samples, 935 taken for training. Compared to classifier finetuning of llm, which is easier we only modify few final layers parameters. However, in instruction finetuning inorder to get better performance, we modify all params of the pretained model (full-finetuning).
 
 ## Setup
 Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set up can be found [here](https://docs.astral.sh/uv/getting-started/).
