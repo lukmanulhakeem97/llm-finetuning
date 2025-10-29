@@ -82,7 +82,7 @@ def generate_and_print_sample(model, tokenizer, device, start_context):
         print(decoded_text.replace("\n", " "))  # Compact print format
     model.train()
 
-def train_model_simple(model, train_loader, val_loader, optimizer, device, num_epochs,
+def train_model(model, train_loader, val_loader, optimizer, device, num_epochs,
                        eval_freq, eval_iter, start_context, tokenizer):
     # Initialize lists to track losses and tokens seen
     train_losses, val_losses, track_tokens_seen = [], [], []

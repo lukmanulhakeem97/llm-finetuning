@@ -17,7 +17,7 @@ from utils.gpt_download import download_and_load_gpt2
 from utils.gpt_load import load_weights_into_gpt
 from model import GPTModel, load_model_config
 from utils.training import (
-  train_model_simple, 
+  train_model, 
   plot_losses,
   text_to_token_ids,
   token_ids_to_text,
@@ -120,7 +120,7 @@ def main():
     optimizer = torch.optim.AdamW(model.parameters(), lr=0.00005, weight_decay=0.1)
     num_epochs = 2
 
-    train_losses, val_losses, tokens_seen = train_model_simple(
+    train_losses, val_losses, tokens_seen = train_model(
         model, train_loader, val_loader, optimizer, device,
         num_epochs=num_epochs, eval_freq=5, eval_iter=5,
         start_context=format_input(val_data[0]), tokenizer=tokenizer
