@@ -20,9 +20,12 @@ Pre-requisites are `python<=3.13` and `uv` package manger, instructions to set u
 **Predict Spam or not:**
 - Download pretrained `gpt2_classifier_tuned.pth` from my [huggingfaceHub](https://huggingface.co/lukmanulhakeem/gpt2-classifier-tuned/tree/main) and place it on cloned `llm-finetuning\gpt2-classifier-tuning` path.
 - Run `inference.py` with the input message: `uv run inference.py "You are a winner you have been specially selected to receive $1000 cash or a $2000 award."`.
-
+- `inference_lora.py` apply LoRA (Low Rank Adaptation) finetuning technique on pretrained model.
+- Both have similar accuracies.
+  
 **Finetuning:**
 - Run `uv run finetune.py`, will generate `gpt2_classifier_tuned.pth`.
+- Run `uv run finetune_lora.py`, will generate `gpt2_classifier_lora_tuned.pth`.
 
 ## Credits
 - https://github.com/rasbt/LLMs-from-scratch
